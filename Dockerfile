@@ -12,3 +12,5 @@ RUN pipenv install
 COPY . .
 
 CMD ["pipenv", "run", "python", "/app/main.py"]
+
+ENTRYPOINT [ "pipenv", "run", "python", "/app/main.py" ]
