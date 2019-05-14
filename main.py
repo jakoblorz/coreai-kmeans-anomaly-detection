@@ -21,4 +21,4 @@ input = pd.read_csv(args.url_in)
 
 print(input)
 
-requests.post(args.url_out, data=input.to_csv())
+requests.put(args.url_out, data=input.to_csv())
